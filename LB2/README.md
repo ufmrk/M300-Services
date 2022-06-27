@@ -1,5 +1,7 @@
 # Einleitung
-Einleitung zum LB2 Projekt (Erklärungen)
+In diesem Projekt wird die Collaboration-Software [Mattermost](https://mattermost.com/) auf einem Kubernetes Cluster deployed.
+
+Folgende [Anleitung](https://docs.mattermost.com/install/install-kubernetes.html) dient als Leitfaden bei der Installation.
 
 # Inhaltsverszeichnis
 
