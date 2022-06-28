@@ -124,9 +124,21 @@ Vagrant ist eine freie Ruby-Anwendung zum Erstellen und Verwalten von virtuellen
 #### Cheatsheet
 ![Cheatsheet](/images/vagrant_cheatsheet.webp)
 
+#### Vagrantfile
+Die Hauptfunktion des Vagrantfiles besteht darin, den für ein Projekt erforderlichen Maschinentyp zu beschreiben und zu beschreiben, wie diese Maschinen konfiguriert und bereitgestellt werden. Vagrantfiles werden Vagrantfiles genannt, weil der eigentliche wörtliche Dateiname für die Datei Vagrantfile lautet.
+
+#### Provision Script
+Die Vagrant-Shell-Bereitstellung ermöglicht das Hochladen und Ausführen eines Skripts innerhalb der Gastmaschine.
+Die Shell-Bereitstellung ist ideal für Benutzer, die neu in Vagrant sind und schnell einsatzbereit sein wollen, und bietet eine gute Alternative für Benutzer, die mit einem vollständigen Konfigurationsmanagementsystem wie Chef oder Puppet nicht vertraut sind.
+Für POSIX-ähnliche Maschinen führt der Shell Provisioner Skripte mit SSH aus. Für Windows-Gastcomputer, die für die Verwendung von WinRM konfiguriert sind, führt der Shell-Provisioner PowerShell- und Batch-Skripte über WinRM aus.
+
+#### Vagrant Synced Folders
+Um Dateien zwischen dem Host und der Virtuellen Maschine zu sharen, kann man diese in den Ordner kopieren, in welcher das Vagrantfile liegt. Die Shared Folder werden mit dem Parameter `config.vm.synced_folder` im Vagrantfile definiert.
+
 ### Hands-On
 
 #### Apache Webserver aufsetzen
+[Hier geht es zum Auftrag](https://github.com/mc-b/M300/tree/master/10-Toolumgebung#--04---vagrant)
 
 #### Nginx Webserver aufsetzen
 [Hier geht es zum Auftrag](https://github.com/ser-cal/M300-Vagrant-Webserver)
@@ -140,15 +152,38 @@ Docker ist ein beliebtes Open-Source-Tool, das eine portable und konsistente Lau
 #### Cheatsheet
 ![Cheatsheet](/images/dockercheatsheet.png)
 
+#### Docker Architektur
+Docker Deamon
+
+• Erstellen, Ausführen und Überwachen der Container<br>
+• Bauen und speichern der Images
+
+Docker CLI
+
+• Schnittstelle zum Docker Deamon
+
+#### File
+
+
+#### Image
+
+
+#### Container
+
+
+#### Volumes
+
+
+#### Networking
+
+
 ### Hands-On
 
-### Eigenes Image erstellen
 
+### Eigenes Image erstellen
+[Hier geht es zum Auftrag](https://gitlab.com/ser-cal/Container-CAL-webapp_v1)
 
 ---
-
-# Quellen
-
 
 # OpenSource Lizenz
 ![copyright](https://camo.githubusercontent.com/bf63a077023c34e5c61916eea81a068b4e44c86d51c08b8db9d2335a0b9af3b6/68747470733a2f2f692e6372656174697665636f6d6d6f6e732e6f72672f6c2f62792d6e632d73612f332e302f63682f38387833312e706e67)
