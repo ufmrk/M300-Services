@@ -1,12 +1,13 @@
 # Einleitung
-In diesem Projekt wird die Collaboration-Software [Mattermost](https://mattermost.com/) auf einem Kubernetes Cluster deployed.
+In diesem Projekt wird die Cloud-Software [OwnCloud](https://owncloud.com/) auf einem Docker Host deployed.
 
-Folgende [Anleitung](https://docs.mattermost.com/install/install-kubernetes.html) dient als Leitfaden bei der Installation.
+Folgende [Anleitung](https://doc.owncloud.com/server/next/admin_manual/installation/docker/#docker-compose) dient als Leitfaden bei der Installation.
 
 # Inhaltsverszeichnis
 
+
 ## Service-Aufbau 
-Text
+Unsere Infrastruktur beinhaltet eine bereits installierte VM, welche von der TBZ bereitgestellt wird. Mittels Wireguard VPN ist es möglich, sich auf die VM zu verbinden auf SSH Basis. Auf der VM werden wir anschliessend unsere Docker Container hochfahren und verwalten. Die Container betreiben die Cloud-Software Owncloud, welche gleichzeitig auch als Kollaborationssoftware dient. 
 
 ## Umsetzung
 Text
