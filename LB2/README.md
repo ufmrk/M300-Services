@@ -10,7 +10,7 @@ Folgende [Anleitung](https://doc.owncloud.com/server/next/admin_manual/installat
 Unsere Infrastruktur beinhaltet eine bereits installierte VM, welche von der TBZ bereitgestellt wird. Mittels Wireguard VPN ist es möglich, sich auf die VM zu verbinden auf SSH Basis. Auf der VM werden wir anschliessend unsere Docker Container hochfahren und verwalten. Die Container betreiben die Cloud-Software Owncloud, welche gleichzeitig auch als Kollaborationssoftware dient. 
 
 ## Umsetzung
-Text
+https://raw.githubusercontent.com/ufmrk/M300-Services/main/LB2/files/setup.sh
 
 ## Testing
 Text
