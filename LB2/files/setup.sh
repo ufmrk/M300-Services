@@ -6,10 +6,10 @@ mkdir owncloud-docker-server
 # Move into project folder
 cd owncloud-docker-server
 
-# Pull docker-compose.yml from GitHub repository
-wget https://raw.githubusercontent.com/owncloud/docs-server/master/modules/admin_manual/examples/installation/docker/docker-compose.yml
+# Pull docker-compose.yml from ufmrk GitHub repository
+wget https://raw.githubusercontent.com/ufmrk/M300-Services/main/LB2/files/docker-compose.yml
 
-# Pull the environment configuration file
+# Pull the environment configuration file from ufmrk GitHub repository
 wget https://raw.githubusercontent.com/ufmrk/M300-Services/main/LB2/files/.env
 
 # Build and start the container
