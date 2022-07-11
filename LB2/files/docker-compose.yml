@@ -23,7 +23,7 @@ services:
       - OWNCLOUD_DB_TYPE=mysql
       - OWNCLOUD_DB_NAME=pageisolutions_owncloud
       - OWNCLOUD_DB_USERNAME=owncloud
-      - OWNCLOUD_DB_PASSWORD=Welcome01
+      - OWNCLOUD_DB_PASSWORD=owncloud
       - OWNCLOUD_DB_HOST=mariadb
       - OWNCLOUD_ADMIN_USERNAME=${ADMIN_USERNAME}
       - OWNCLOUD_ADMIN_PASSWORD=${ADMIN_PASSWORD}
@@ -43,13 +43,13 @@ services:
     container_name: owncloud_mariadb
     restart: always
     environment:
-      - MYSQL_ROOT_PASSWORD=Welcome01
-      - MYSQL_USER=pageisolutions
-      - MYSQL_PASSWORD=Welcome01
+      - MYSQL_ROOT_PASSWORD=owncloud
+      - MYSQL_USER=owncloud
+      - MYSQL_PASSWORD=owncloud
       - MYSQL_DATABASE=pageisolutions_owncloud
     command: ["--max-allowed-packet=128M", "--innodb-log-file-size=64M"]
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-u", "root", "--password=Welcome01"]
+      test: ["CMD", "mysqladmin", "ping", "-u", "root", "--password=owncloud"]
       interval: 10s
       timeout: 5s
       retries: 5
