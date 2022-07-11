@@ -1,5 +1,8 @@
 # This script automatically sets up an Owncloud server instance.
 
+# Install docker-compose package
+apt install docker-compose
+
 # Create project folder
 mkdir owncloud-docker-server
 
