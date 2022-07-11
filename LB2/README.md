@@ -73,7 +73,14 @@ Nach der Installation können wir über folgende URL die Oberfläche von ownClou
 `http://<IP-Adresse>:8080`
 
 ## Testing
+In diesem Abschnitt wird die Software auf verschiedene Parameter getestet. Alle Szenarios und die Ergebnisse sind in der Tabelle weiter unten sichtbar.
 
+| Szenario | Ereignis | OK/NOK |
+| --------- | ------------ | -------- |
+| Anwendung startet und ist über das Web erreichbar. | ownCloud lässt sich über die IP-Adresse des Server über den Port 8080 aufrufen. | OK |
+| Installation verläuft automatisiert ohne Eingriff des Benutzers. | Es muss ein Kommando eingegeben werden. Ab da verläuft die Installation vollständig automatisiert. | OK |
+| Daten sind persistent. Test-Datei wird auf ownCloud hochgeladen und im Anschluss wird der Container gelöscht. | tbd | tbd |
+| Container lassen sich vollständig automatisiert wieder abbauen | Ein Kommando löscht alle Container inkl. Volumes auf dem Server. | tbd |
 
 ## Quellen
 [Offizielle Anleitung von ownCloud](https://doc.owncloud.com/server/next/admin_manual/installation/docker/)
