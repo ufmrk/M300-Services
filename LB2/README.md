@@ -74,6 +74,10 @@ Ebenfalls kopieren wir die [Environment](/LB2/files/.env) Konfigurationsdatei. I
 Am Ende bauen und starten wir den Container:<br>
 `docker-compose up -d`
 
+Alle Daten werden standardmässig in Docker Volumes gespeichert. Die Möglichkeit alle Daten auf einer physischen Dateiablage zu speichern besteht.<br>
+`docker volume ls | grep ownclouddockerserver`
+
+
 ### Installation
 Ab hier wird die Installation der Software beschrieben.
 
@@ -90,8 +94,8 @@ In diesem Abschnitt wird die Software auf verschiedene Parameter getestet. Alle 
 | --------- | ------------ | -------- |
 | Anwendung startet und ist über das Web erreichbar. | ownCloud lässt sich über die IP-Adresse des Server über den Port 8080 aufrufen. | OK |
 | Installation verläuft automatisiert ohne Eingriff des Benutzers. | Es muss ein Kommando eingegeben werden. Ab da verläuft die Installation vollständig automatisiert. | OK |
-| Daten sind persistent. Test-Datei wird auf ownCloud hochgeladen und im Anschluss wird der Container gelöscht. | tbd | tbd |
-| Container lassen sich vollständig automatisiert wieder abbauen | Ein Kommando löscht alle Container inkl. Volumes auf dem Server. | tbd |
+| Daten sind persistent. Test-Datei wird auf ownCloud hochgeladen und im Anschluss wird der Container heruntergefahren. | Die Daten werden im Docker Volume abgelegt. Bei einem Upgrade des Containers bleiben diese bestehen | OK |
+| Container lassen sich vollständig automatisiert wieder abbauen | Ein Kommando löscht alle Container inkl. Volumes (inkl. Daten) auf dem Server. | OK |
 
 ## Quellen
 [Offizielle Anleitung von ownCloud](https://doc.owncloud.com/server/next/admin_manual/installation/docker/)
