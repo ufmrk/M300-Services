@@ -4,7 +4,18 @@ In diesem Projekt wird die Cloud-Software [OwnCloud](https://owncloud.com/) auf 
 Folgende [Anleitung](https://doc.owncloud.com/server/next/admin_manual/installation/docker/#docker-compose) dient als Leitfaden bei der Installation.
 
 # Inhaltsverszeichnis
-
+- [Einleitung](#einleitung)
+- [Inhaltsverszeichnis](#inhaltsverszeichnis)
+  - [Service-Aufbau](#service-aufbau)
+    - [Allgemeine Informationen](#allgemeine-informationen)
+    - [Systemvoraussetzungen](#systemvoraussetzungen)
+  - [Umsetzung](#umsetzung)
+    - [Vorarbeit](#vorarbeit)
+      - [Eigenes Image erstellen](#eigenes-image-erstellen)
+      - [Konfiguration der Container definieren](#konfiguration-der-container-definieren)
+    - [Installation](#installation)
+  - [Testing](#testing)
+  - [Quellen](#quellen)
 
 ## Service-Aufbau
 In diesem Abschnitt wird beschrieben wie die Infrastruktur aufgebaut ist und welche Voraussetzungen für das System benötigt werden.
@@ -85,4 +96,4 @@ In diesem Abschnitt wird die Software auf verschiedene Parameter getestet. Alle 
 ## Quellen
 [Offizielle Anleitung von ownCloud](https://doc.owncloud.com/server/next/admin_manual/installation/docker/)
 
-[Docker Cheatsheet](https://www.docker.com/wp-content/uploads/2022/03/docker-cheat-sheet.pdf) 
+[Docker Cheatsheet](https://www.docker.com/wp-content/uploads/2022/03/docker-cheat-sheet.pdf)
